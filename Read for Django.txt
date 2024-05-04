@@ -1,0 +1,4 @@
+1. install python 3.x.x
+2. 'pip install django' on cmd
+3. 'pip freeze' for showing installed package
+4. 'django-admin startproject AnyProjectName' for start new project
