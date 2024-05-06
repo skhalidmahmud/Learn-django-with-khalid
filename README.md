@@ -6,3 +6,12 @@
 	'python manage.py runserver AnyPortNumber' like 5555 for change url port
 6. 'python manage.py migrate' >> next to runserver **for viewing the table, use 'DB Browser for SQLite**
 7. 'python manage.py createsuperuser' >> for use super user
+8. for create views >> 
+	create a folder as viwes.py
+	write >
+		from django.http import HttpResponse
+
+			def home(request): ** any name**
+				return HttpResponse("ANYTHING.")
+	then open urls.py and call views
+9. 
