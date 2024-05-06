@@ -1,7 +1,8 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def home(request):
-    return HttpResponse("<b>Welcome to my new website.</b>\nIt is under constraction, so wait and see after 1 hr.\nBest of luck.")
+    return render(request, "index.html")
 def test(request):
     return HttpResponse("This is home on <b>Test<b> page.")
 def testMore(request, urlss):
