@@ -21,4 +21,6 @@ from TestDjangoWithKhalid import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home),
+    path('test/', views.test),
+    path('test/<slug:urlss>', views.testMore), ## here have three type, int, str and slug
 ]
