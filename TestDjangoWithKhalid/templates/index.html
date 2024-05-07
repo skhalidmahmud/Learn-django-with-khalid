@@ -1,25 +1,64 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>{{title}}</title>
+    <meta charset="UTF-8" />
+    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="static/reset.min.css" />
+    <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="static/header.css" />
   </head>
-  <body bgcolor="RED" style="text-align: center">
-    <b>Welcome to my new website.</b>
-    <p>It is under constraction, so wait and see after 1 hr.</p>
-    <p>Best of luck.</p>
+  <body>
+    <!-- Header Start -->
+    <header class="site-header">
+      <div class="wrapper site-header__wrapper">
+        <div class="site-header__start">
+          <nav class="nav">
+            <button class="nav__toggle" aria-expanded="false" type="button">
+              menu
+            </button>
+            <ul class="nav__wrapper">
+              <li class="nav__item"><a href="#">Home</a></li>
+              <li class="nav__item"><a href="#">About</a></li>
+              <li class="nav__item"><a href="#">Services</a></li>
+              <li class="nav__item"><a href="#">Hire us</a></li>
+              <li class="nav__item"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="brand">Brand</a>
+        </div>
+        <div class="site-header__middle">
+          <ul class="sub-nav">
+            <li class=""><a href="#">Services</a></li>
+            <li class=""><a href="#">Home</a></li>
+            <li class=""><a href="#">About</a></li>
+            <li class=""><a href="#">Hire us</a></li>
+          </ul>
+        </div>
+        <div class="site-header__end">
+          <a href="#" class="button button--icon" aria-label="Sign in">
+            <svg
+              version="1.1"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g>
+                <path
+                  d="m83.898 77.398c-2.3984-13-13.699-22.5-26.898-22.5h-13.699c-13.5 0-24.898 9.8008-27.102 23.102-1.1016 6.6992 4.1016 12.699 10.801 12.699h46.199c6.8008 0 12-6.1992 10.801-12.898z"
+                />
+                <path
+                  d="m36.102 44.199c7.8008 7.8008 20.398 8 28.398 0.39844l0.19922-0.19922c6.8984-6.6016 7.6016-17.301 1.5-24.699-8.3008-10-23.699-9.8008-31.699 0.39844-5.6016 7.1992-5 17.5 1.5 24z"
+                />
+              </g>
+            </svg>
 
-    <br />
+            <span>Sign in</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
 
-    <table border="1" cellpadding="10">
-      <tr>
-        <td>Name</td>
-        <td>Phone number</td>
-      </tr>
-      {% for d in prople_details%}
-      <tr>
-        <td>{{d.name}}</td>
-        <td>{{d.phone}}</td>
-      </tr>
-      {% endfor%}
-    </table>
+    <script src="static/header.js"></script>
   </body>
 </html>
