@@ -20,7 +20,12 @@ from TestDjangoWithKhalid import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home),
+    path('', views.home, name='home'),
     path('test/', views.test),
     path('test/<slug:urlss>', views.testMore), ## here have three type, int, str and slug
+
+    path('calculator.html/', views.calculator, name='calculator'),
+    path('about.html/', views.about, name='about'),
+    path('services.html/', views.services, name='services'),
+    path('hire-us.html/', views.hire, name='hire'),
 ]

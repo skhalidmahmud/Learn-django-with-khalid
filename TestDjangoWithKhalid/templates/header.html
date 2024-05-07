@@ -19,21 +19,19 @@
               menu
             </button>
             <ul class="nav__wrapper">
-              <li class="nav__item"><a href="#">Home</a></li>
-              <li class="nav__item"><a href="#">About</a></li>
-              <li class="nav__item"><a href="#">Services</a></li>
-              <li class="nav__item"><a href="#">Hire us</a></li>
-              <li class="nav__item"><a href="#">Contact</a></li>
+              <li class="nav__item"><p><b>List of work.</b></p></li>
+              <li class="nav__item"><a href="{% url "calculator" %}">Calculator</a></li>
+              <li class="nav__item"><a href="https://github.com/skhalidmahmud">Git | Khalid</a></li>
             </ul>
           </nav>
           <a href="#" class="brand">khalid ツ</a>
         </div>
         <div class="site-header__middle">
           <ul class="sub-nav">
-            <li class=""><a href="#">Services</a></li>
-            <li class=""><a href="#">Home</a></li>
-            <li class=""><a href="#">About</a></li>
-            <li class=""><a href="#">Hire us</a></li>
+            <li class=""><a href="{% url "services" %}">Services</a></li>
+            <li class=""><a href="{% url "home" %}">Home</a></li>
+            <li class=""><a href="{% url "about" %}">About</a></li>
+            <li class=""><a href="{% url "hire" %}">Hire us</a></li>
           </ul>
         </div>
         <div class="site-header__end">

@@ -15,3 +15,26 @@
 				return HttpResponse("ANYTHING.")
 	then open urls.py and call views
 9. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>> 		{% extends "base.html" %}
+		{% block content %}
+		    <!-- start containt-->
+
+
+		 	<!-- end containt-->
+		{% endblock %}
